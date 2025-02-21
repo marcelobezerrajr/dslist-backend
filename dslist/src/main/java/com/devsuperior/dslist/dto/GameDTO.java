@@ -18,7 +18,7 @@ public class GameDTO {
     public GameDTO() {
     }
 
-    public GameDTO(Game entity){
+    public GameDTO(Game entity) {
         BeanUtils.copyProperties(entity, this);
     }
 

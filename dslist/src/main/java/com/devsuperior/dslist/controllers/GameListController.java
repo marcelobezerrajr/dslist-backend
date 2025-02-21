@@ -21,7 +21,7 @@ public class GameListController {
     private GameService gameService;
 
     @GetMapping
-    public List<GameListDTO> findAllLists(){
+    public List<GameListDTO> findAllLists() {
         return gameListService.findAllLists();
     }
 

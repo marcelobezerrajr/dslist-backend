@@ -12,7 +12,7 @@ public class GameMinDTO {
     private String shortDescription;
     private Integer position;
 
-    public GameMinDTO(){
+    public GameMinDTO() {
 
     }
 
