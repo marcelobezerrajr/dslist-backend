@@ -18,7 +18,8 @@ public class GameService {
 
     @Transactional(readOnly = true)
     public GameDTO findById(Long id) {
-        Game result = gameRepository.findById(id).get();
+        Game result = gameRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Game not found with id: " + id));
         return new GameDTO(result);
     }
 
